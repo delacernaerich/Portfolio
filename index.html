@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Eich Lorain de la Cerna, BSIT Student and Aspiring IT Professional." />
+  <title>Eich Lorain | Portfolio</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a href="#home" class="logo">
+        <!-- EDIT: your initials -->
+        <span class="logo-text">PORTFOLIO</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <!-- EDIT: your full name -->
+          <h1 class="hero-title">Eich Lorain de la Cerna</h1>
+          <p class="hero-role">BSIT Student <span class="divider">|</span> Aspiring IT Professional</p>
+          <!-- EDIT: short introduction (2–3 sentences) -->
+          <p class="hero-intro">
+            I am a Bachelor of Science in Information Technology student interested in exploring the field of Quality Assurance (QA). Throughout my academic journey, I have gained experience managing school projects as a Project Manager, which helped me develop my teamwork, communication, and organizational skills. 
+          </p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal">
+          <!-- EDIT: put your photo at assets/profile.jpg (square image works best).
+               Until then, a placeholder is shown automatically. -->
+          <div class="photo-frame">
+            <img src="assets/profile.jpg" alt="Profile photo of Eich Lorain de la Cerna" id="profileImg" />
+            <div class="photo-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+              </svg>
+              <span>Your Photo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Get to know me</p>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <!-- EDIT: your background -->
+            <p>
+              I am a <strong>Bachelor of Science in Information Technology</strong> student at
+              <strong>Bukidnon State University</strong>. For me to be an IT professional is to be a problem solver, and I am passionate about using technology to create solutions that make a positive impact. I am eager to apply my skills and knowledge in a real-world setting through an internship opportunity.
+            </p>
+            <p>
+              I'm interested in learning a lot if lesson in this field, being an IT student wants me to explore more about the field of IT and to be a part of the industry. I am excited to contribute my skills and enthusiasm to a dynamic team, while also gaining valuable experience that will help me grow as a professional.
+            </p>
+          </div>
+
+          <ul class="about-facts reveal">
+            <!-- EDIT: quick facts -->
+            <li><span class="fact-label">Program</span><span class="fact-value">BS Information Technology</span></li>
+            <li><span class="fact-label">Year Level</span><span class="fact-value">4th Year</span></li>
+            <li><span class="fact-label">Location</span><span class="fact-value">Bukidnon,Philippines</span></li>
+            <li><span class="fact-label">Looking for</span><span class="fact-value">QA Internship</span></li>
+            <li><span class="fact-label">Availability</span><span class="fact-value">depends</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">School work</p>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- EDIT: copy an <article class="card project-card"> block to add more projects.
+             Give each new description a unique id (project-desc-4, ...) and match it in aria-controls. -->
+        <div class="card-grid projects-grid">
+          <article class="card project-card reveal">
+            <div class="project-thumb">Project 1</div>
+            <div class="project-body">
+              <h3>Museum Attendance Monitoring System</h3>
+              <p class="project-meta">Web Systems and Technologies · 3rd Year</p>
+              <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-desc-1">
+                <span class="toggle-label">View details</span> <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="project-desc" id="project-desc-1">
+                <div class="project-desc-inner">
+                  <p>The Museum Attendance Monitoring System is a web-based application designed to manage and monitor visitor attendance at the school museum. It allows administrators to track visitor records efficiently and provides a booking feature for individuals or groups who wish to visit the museum. This system helps improve attendance management, organize museum visits, and provide a more convenient experience for visitors.</p>
+                  <p> ROLE: Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb has-image" style="background-image: url('assets/church.jpg'); background-position: center top;" role="img" aria-label="Church Management System home screen"></div>
+            <div class="project-body">
+              <h3>Church Management System</h3>
+              <p class="project-meta">Web Systems and Technologies · 3rd Year</p>
+              <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-desc-2">
+                <span class="toggle-label">View details</span> <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="project-desc" id="project-desc-2">
+                <div class="project-desc-inner">
+                  <p>The Church Management System is a web-based application designed to streamline the operations of a local church. It allows administrators to manage member information, and organize events. This system helps improve communication within the church community and provides a more efficient way to manage church activities.</p>
+                  <p> ROLE: Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb">Project 3</div>
+            <div class="project-body">
+              <h3>Bus Tracking</h3>
+              <p class="project-meta">Web Systems and Technologies · 3rd Year</p>
+              <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-desc-3">
+                <span class="toggle-label">View details</span> <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="project-desc" id="project-desc-3">
+                <div class="project-desc-inner">
+                  <p>The Bus Tracking system is a web-based application designed to monitor and track the location of buses in real-time. It allows administrators to manage bus schedules, monitor driver performance, and provide passengers with up-to-date information about bus locations and arrival times. This system helps improve transportation efficiency and provides a better experience for passengers.</p>
+                  <p> ROLE: Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb has-image" style="background-image: url('assets/image.png');" role="img" aria-label="Table Tech welcome screen"></div>
+            <div class="project-body">
+              <h3>Table Tech</h3>
+              <p class="project-meta">Human Computer Interaction · 1st Year</p>
+              <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-desc-4">
+                <span class="toggle-label">View details</span> <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="project-desc" id="project-desc-4">
+                <div class="project-desc-inner">
+                  <p>Table Tech is a web-based application designed to provide an enhanced user experience for all users. </p>
+                  <p> ROLE: Project Lead</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb">Project 5</div>
+            <div class="project-body">
+              <h3>LunaSync</h3>
+              <p class="project-meta">Human Computer Interaction · 1st Year</p>
+              <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-desc-5">
+                <span class="toggle-label">View details</span> <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="project-desc" id="project-desc-5">
+                <div class="project-desc-inner">
+                  <p> ROLE: Project Lead</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-thumb">Project 6</div>
+            <div class="project-body">
+              <h3>MugnaGrab</h3>
+              <p class="project-meta">Human Computer Interaction · 1st Year</p>
+              <button class="project-toggle" type="button" aria-expanded="false" aria-controls="project-desc-4">
+                <span class="toggle-label">View details</span> <span class="toggle-icon" aria-hidden="true">&#9662;</span>
+              </button>
+              <div class="project-desc" id="project-desc-4">
+                <div class="project-desc-inner">
+                  <p> ROLE: Project Lead</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Academic background</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <!-- EDIT: your schools and years -->
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-date">2023 – 2026</span>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p class="timeline-place">Bukidnon State University, College of Technologies. Malaybalay City</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-date">2021 – 2023</span>
+            <h3>Senior High School — STEM</h3>
+            <p class="timeline-place">Impasugong National High School, Impasugong Bukidnon]</p>
+            <p>Consistent Honor Student</p>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-date">2017 – 2021</span>
+            <h3>Junior High School</h3>
+            <p class="timeline-place">Impasugong National High School, Impasugong Bukidnon</p>
+             <p>Honor Student</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-box reveal">
+          <div>
+            <p class="section-tag">Curriculum Vitae</p>
+            <h2 class="section-title">My Resume</h2>
+            <p class="resume-text">
+              View or download my resume for a full overview of my education, skills, and projects.
+            </p>
+          </div>
+          <!-- EDIT: save your resume as assets/resume.pdf -->
+          <div class="btn-group">
+            <a href="assets/resume.pdf" class="btn btn-primary resume-link" target="_blank" rel="noopener">View Resume</a>
+            <a href="assets/resume.pdf" class="btn btn-outline resume-link" download>Download PDF</a>
+          </div>
+        </div>
+        <p class="resume-notice" id="resumeNotice" hidden>
+          Resume file not found. Add your resume as <code>assets/resume.pdf</code> to enable these buttons.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">Let's connect</p>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            I'm open to internship opportunities. Feel free to reach out through any of the channels below.
+          </p>
+        </div>
+
+        <!-- EDIT: your email address and profile URLs -->
+        <div class="card-grid contact-grid">
+          <a href="mailto:your.email@example.com" class="card contact-card reveal">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <h3>Email</h3>
+            <p>delacernaerichlorain@gmail.com</p>
+          </a>
+
+          <a href="https://github.com/delacernaerich" class="card contact-card reveal" target="_blank" rel="noopener">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </span>
+            <h3>GitHub</h3>
+            <p>github.com/delacernaerich</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/your-profile" class="card contact-card reveal" target="_blank" rel="noopener">
+            <span class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </span>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/your-profile</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> de la Cerna. All rights reserved.</p>
+      <a href="#home" class="link-arrow">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
